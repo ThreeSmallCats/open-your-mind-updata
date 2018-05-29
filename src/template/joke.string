@@ -1,0 +1,3 @@
+{{#data}}
+    <li data-text='{{text}}'>{{text}}</li>
+{{/data}}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="open your mind，happy，图片，笑话，趣图，谜语，图片，哈哈，哈哈哈，搞笑图片，动图，猜一猜，猜猜">
+    <meta name="description" content="一个提供笑话、幽默、图片、趣图、谜语、猜一猜、搞笑、动图等数种搞笑，最搞笑、最幽默的网上笑话平台。">
+    <link rel="shortcut icon" href="../pic/favicon.ico" type="image/x-icon">
+    <title>
+        <%= htmlWebpackPlugin.options.title%>
+    </title>
+</head>
+
+<body>
+    <div class="box">
+        <a class="iconfont" id='download' href="https://threesmallcats.cn/download/OYM.apk" download="OPY.app">&#xe614;</a>
+        <div class="more">
+            <span class="iconfont" id='more'>&#xe60f;</span>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="nav-item active" data-index='0'>
+                    <span>笑话</span>
+                </li>
+                <li class="nav-item " data-index="1">
+                    <span>图片</span>
+                </li>
+                <li class="nav-item " data-index="2">
+                    <span>谜语</span>
+                </li>
+            </ul>
+            <div class="small-line">
+                <div class="move-line">
+
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <ul id='content-box'>
+                <li class="content-item-joke">
+                    <ul class="content-ul">
+                        <img class='loading' src="../pic/loading.gif" alt="">
+
+                        <!-- 笑话模板加载 -->
+                    </ul>
+                </li>
+                <li class="content-item-pic">
+                    <ul class='content-pic'>
+
+                        <img class='loading' src="../pic/loading.gif" alt="">
+                        <!-- 图片模板加载 -->
+                    </ul>
+                </li>
+                <li class="content-item-guess">
+                    <ul class="content-guess">
+                        <img class='loading' src="../pic/loading.gif" alt="">
+                        <!-- 谜语模板加载 -->
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="show-guess">
+            <div class="show-guess-title">
+                <span class="title"></span>
+                <div class="show-guess-back iconfont">
+                    <span class="iconfont">&#xe61f;</span>
+                </div>
+            </div>
+            <div class="show-guess-content">
+                <ul class="show-guess-content-item">
+
+                </ul>
+                <div class='not'>
+                    <span>There's nothing here.......</span>
+                </div>
+            </div>
+        </div>
+        <div class="show-answer">
+            <div class="show-answer-title">
+                <span class="title">答案</span>
+                <div class="show-answer-back">
+                    <span class="iconfont">&#xe61f;</span>
+                </div>
+            </div>
+            <div class="show-answer-content">
+                <div class="text">
+                    答案
+                </div>
+                <div class="answer">
+                    answer
+                </div>
+                <div class="hide">
+                    <span>点击</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

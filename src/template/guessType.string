@@ -1,0 +1,6 @@
+{{#data}}
+    <li data-id='{{id}}'>
+        <i></i><br>
+        <span>{{name}}</span>
+    </li>
+{{/data}}

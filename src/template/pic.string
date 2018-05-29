@@ -1,0 +1,5 @@
+{{#data}}
+    <li data-img={{img}}>
+        <img src={{img}} alt=''>
+    </li>
+{{/data}}
