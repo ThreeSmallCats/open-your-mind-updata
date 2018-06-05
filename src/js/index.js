@@ -103,7 +103,7 @@ window.onload = function () {
                 api.fontSlef(contentUlArr[i], 19)
                 contentUlHeight += contentUlArr[i].clientHeight
             }
-            contentUl.style.height = contentUlHeight + contentUlArr.length * 9 + 'px'
+            contentUl.style.height = contentUlHeight + contentUlArr.length * 10 + 'px'
             new BScroll.default(contentItemJoke, {
                 click: true
             })
@@ -114,7 +114,7 @@ window.onload = function () {
     // 图片区 难点
     function picBagin() {
         // 为了可以刚刚开始可以滑动一点
-        contentPic.style.height = 2500 + 'px'
+        contentPic.style.height = 3000 + 'px'
         new BScroll.default(contentItemPic, {
             click: true
         })
@@ -387,11 +387,11 @@ window.onload = function () {
                                 guessText.innerHTML = text
                                 guessAnswer.innerHTML = answer
 
-                                api.fontSlef(guessText, 30)
+                                api.fontSlef(guessText, 25)
                                 api.fontSlef(guessAnswer, 30)
                                 let answerHeight = guessAnswer.clientHeight
 
-                                hide.style.height = answerHeight + 1 + 'px'
+                                hide.style.height = answerHeight + 4 + 'px'
                                 hide.style.lineHeight = answerHeight + 'px'
                                 // 自适应字体
                                 api.fontSlef(hide, 30)
@@ -417,7 +417,7 @@ window.onload = function () {
 
                             }
                         }
-                        showGuessItem.style.height = showGuessItemHeight + showGuessItemLi.length * 5 + 70 + 'px'
+                        showGuessItem.style.height = showGuessItemHeight + showGuessItemLi.length *10 + 'px'
                         new BScroll.default(showGuessContent, {
                             click: true
                         })

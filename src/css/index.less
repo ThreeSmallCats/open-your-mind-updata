@@ -1,7 +1,9 @@
-@basecolor : rgb(31,31,31);
-@bordercolor :skyblue;
+// @basecolor : rgb(31,31,31);
+@basecolor : rgb(50, 206, 245);
+@bordercolor :white;
+@navcolor : rgb(3, 152, 252);
 @backcolor : rgba(255,0,0,0.9);
-@othercolor : rgba(230, 12, 12, 0.459);
+@othercolor : rgba(230, 12, 12,0.7);
 
 body{
     background-color: @basecolor;
@@ -17,7 +19,7 @@ body{
         height: 30px;
         background-color: @othercolor;
         position: fixed;
-        top: 5px;
+        bottom:  50px;
         right: 10px;
         border-radius: 50%;
         line-height: 30px;
@@ -49,6 +51,7 @@ body{
         height: 5%;
         padding: 5px 10%;
         box-sizing: border-box;
+        background-color:@navcolor;
         ul{
             width: 100%;
             height: 100%;
@@ -68,7 +71,7 @@ body{
                 text-align: center;
                 width: 30%;
                 height: 100%;
-                color: gray;
+                color: black;
                 &.active{
                     color: white;
                 }
@@ -119,10 +122,16 @@ body{
                 padding: 10px 5px;
                 vertical-align: top;
                 .content-ul{
+                    position: relative;
                     width: 100%;
                     border-radius: 10px;
                     .loading{
-                        width: 100%;
+                        position: absolute;
+                        top:100px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        // width: 100%;
+
                     }
                     li{
                         cursor: pointer;
@@ -134,6 +143,7 @@ body{
                         border-radius: 10px;
                         margin-top: 5px;
                         padding: 5px ;
+                        // color: rgb(31, 31, 31);
                     }
                 }
                
@@ -152,7 +162,10 @@ body{
                 border-radius: 10px;
                 position: relative;
                 .loading{
-                    width: 100%;
+                    position: absolute;
+                    top:100px;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
                 li{
                     cursor: pointer;
@@ -183,7 +196,10 @@ body{
                 border-radius: 10px;
                 position: relative;
                 .loading{
-                    width: 100%;
+                    position: absolute;
+                    top:100px;
+                    left: 50%;
+                    transform: translateX(-50%);
                 }
                 li{
                     cursor: pointer;
@@ -218,6 +234,7 @@ body{
         height: 100%;
         background-color: @basecolor;
         .show-guess-title{
+            background-color: @navcolor;
             position: relative;
             font-size: 10px;
             width: 100%;
@@ -270,7 +287,7 @@ body{
                     width: 100%;
                     padding: 5px 0;
                     background-color: @basecolor;
-                    border: 1px solid @bordercolor;
+                    border: 2px solid @bordercolor;
                     border-radius: 10px;
                     box-sizing: border-box;
                     color: white;
@@ -300,6 +317,7 @@ body{
         background-color: @basecolor;
         z-index: 101;
         .show-answer-title{
+            background-color: @navcolor;
             position: relative;
             font-size: 10px;
             width: 100%;
@@ -347,7 +365,7 @@ body{
                 left: 50%;
                 width: 80%;
                 box-sizing: border-box;
-                border: 1px solid @bordercolor;
+                border: 2px solid @bordercolor;
                 border-radius: 10px;
                 transform: translateX(-50%);
                 padding: 10px 10px;
@@ -360,7 +378,7 @@ body{
                 left: 50%;
                 width: 50%;
                 box-sizing: border-box;
-                border: 1px solid @bordercolor;
+                border: 2px solid @bordercolor;
                 border-radius: 10px;
                 transform: translateX(-50%);
                 padding: 10px 10px;
@@ -380,8 +398,8 @@ body{
                 left: 50%;
                 width: 50%;
                 box-sizing: border-box;
-                background-color: @bordercolor;
-                box-shadow: 1px 1px 50px @bordercolor;
+                background-color: rgb(31, 31, 31);
+                box-shadow: 1px 1px 50px rgb(31, 31, 31);
                 border-radius: 10px;
                 transform: translateX(-50%);
                 padding: 10px 10px;
