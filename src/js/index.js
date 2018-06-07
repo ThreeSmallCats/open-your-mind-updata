@@ -56,7 +56,7 @@ window.onload = function () {
                     jokeBegin()
 
                 }
-                line.style.marginLeft = '10px'
+                // line.style.marginLeft = '10px'
                 contentBox.style.transform = 'translateX(0)'
             } else if (index == 1) {
                 moreIndex = 1
@@ -65,7 +65,7 @@ window.onload = function () {
                     picBagin()
 
                 }
-                line.style.marginLeft = '2px'
+                // line.style.marginLeft = '2px'
                 contentBox.style.transform = 'translateX(-33.3%)'
             } else if (index == 2) {
                 moreIndex = 2
@@ -73,7 +73,7 @@ window.onload = function () {
                 if (guessdata == 1) {
                     guessBagin()
                 }
-                line.style.marginLeft = 0
+                // line.style.marginLeft = 0
                 contentBox.style.transform = 'translateX(-66.6%)'
             }
             for (let a = 0; a < liArr.length; a++) {
@@ -310,7 +310,7 @@ window.onload = function () {
             }
             let contentGuessHeight = liWidth * (Math.ceil(iconArr.length / 2))
 
-            contentGuess.style.height = contentGuessHeight + 20 + 'px'
+            contentGuess.style.height = contentGuessHeight + iconArr.length*5 + 'px'
             new BScroll.default(contentItemGuess, {
                 click: true
             })

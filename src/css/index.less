@@ -1,7 +1,7 @@
-// @basecolor : rgb(31,31,31);
-@basecolor : rgb(50, 206, 245);
-@bordercolor :white;
-@navcolor : rgb(3, 152, 252);
+@boxshaow : rgba(26,26,26,.1);
+@boxcolor : rgb(255,255,255);
+@basecolor : rgb(246,246,246);
+@navcolor : rgb(255,255,255);
 @backcolor : rgba(255,0,0,0.9);
 @othercolor : rgba(230, 12, 12,0.7);
 
@@ -48,10 +48,12 @@ body{
     .nav{
         position: relative;
         width: 100%;
+        z-index: 10;
         height: 5%;
         padding: 5px 10%;
         box-sizing: border-box;
         background-color:@navcolor;
+        box-shadow: 0 1px 10px gray;
         ul{
             width: 100%;
             height: 100%;
@@ -67,13 +69,13 @@ body{
                 display: inline-block;
                 vertical-align: top;
                 font-size: 20px;
-                margin-right: 5px;
+                // margin-right: 5px;
                 text-align: center;
-                width: 30%;
+                width: 33.33%;
                 height: 100%;
-                color: black;
+                color: gray;
                 &.active{
-                    color: white;
+                    color: black;
                 }
                 span{
                     position: absolute;
@@ -96,9 +98,8 @@ body{
                 left: 0;
                 width: 33.3%;
                 height: 100%;
-                background-color: white;
+                background-color: black;
                 box-sizing: border-box;
-                margin-left: 10px;
             }
         }
     }
@@ -135,15 +136,16 @@ body{
                     }
                     li{
                         cursor: pointer;
+                        text-indent:1em ;
                         font-size: 20px;
                         width: 100%;
+                        box-shadow: 0 1px 3px rgba(26,26,26,.1);
                         box-sizing: border-box;
-                        background-color: @basecolor;
-                        border: 2px solid @bordercolor;
-                        border-radius: 10px;
+                        background-color: @boxcolor;
+                        border-radius: 2px;
                         margin-top: 5px;
                         padding: 5px ;
-                        // color: rgb(31, 31, 31);
+                        color: rgb(31, 31, 31);
                     }
                 }
                
@@ -179,6 +181,8 @@ body{
                     padding:0 2.5px ;
                     img{
                         width: 100%;
+                        box-sizing: border-box;
+                        box-shadow: 0 1px 3px rgba(26,26,26,.1);
                     }
                 }
                 
@@ -204,14 +208,18 @@ body{
                 li{
                     cursor: pointer;
                     font-size: 20px;
-                    width: 50%;
+                    width: 49%;
                     float: left;
                     height: 200px;
                     box-sizing: border-box;
-                    background-color: @basecolor;
-                    border: 1px solid @bordercolor;
+                    background-color: @boxcolor;
+                    border-radius: 2px;
+                    // border-bottom: 2px solid gray;
+                    box-shadow: 0 1px 3px rgba(26,26,26,.1);
                     text-align: center;
-                    
+                    color: black;
+                    margin-bottom: 5px;
+                    margin-right: 1px;
                     i{
                         display: block;
                         margin-top: 10px;
@@ -233,6 +241,7 @@ body{
         width: 100%;
         height: 100%;
         background-color: @basecolor;
+        z-index: 11;
         .show-guess-title{
             background-color: @navcolor;
             position: relative;
@@ -241,11 +250,14 @@ body{
             height: 5%;
             padding: 5px 10%;
             box-sizing: border-box;
+            box-shadow: 0 1px 10px gray;
+            z-index: 10;
             .title{
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
+                color : black;
             }
             .show-guess-back{ 
                 cursor: pointer;
@@ -274,6 +286,7 @@ body{
             padding: 10px 5px;
             box-sizing: border-box;
             overflow: hidden;
+            z-index: 10;
             ul{
                 width: 100%;
                 height: 100%;
@@ -286,11 +299,12 @@ body{
                     display: inline-block;
                     width: 100%;
                     padding: 5px 0;
-                    background-color: @basecolor;
-                    border: 2px solid @bordercolor;
-                    border-radius: 10px;
+                    background-color: @boxcolor;
+                    // border: 2px solid @bordercolor;
+                    border-radius: 2px;
+                    box-shadow: 0 1px 3px rgba(26,26,26,.1);
                     box-sizing: border-box;
-                    color: white;
+                    color: black;
                     margin-bottom: 5px;
                 }
             }
@@ -298,11 +312,13 @@ body{
                 display: none;
                 width: 100%;
                 height: 100px;
-                background-color: @basecolor;
+                background-color: @boxcolor;
                 text-align: center;
-                border: 1px solid @bordercolor;
-                border-radius: 10px;
+                // border: 1px solid @bordercolor;
+                border-radius: 2px;
                 line-height: 100px;
+                box-shadow: 0 1px 3px rgba(26,26,26,.1);
+                color: black;
             }
         }
     }
@@ -324,11 +340,13 @@ body{
             height: 5%;
             padding: 5px 10%;
             box-sizing: border-box;
+            box-shadow: 0 1px 10px gray;
             .title{
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
+                color: black;
             }
             .show-answer-back{
                 cursor: pointer;
@@ -358,6 +376,7 @@ body{
             padding: 10px 5px;
             box-sizing: border-box;
             overflow: hidden;
+            // background-color: white;
             .text{
                 cursor: pointer;
                 position: absolute;
@@ -365,11 +384,14 @@ body{
                 left: 50%;
                 width: 80%;
                 box-sizing: border-box;
-                border: 2px solid @bordercolor;
-                border-radius: 10px;
+                border: 2px solid white;
+                border-radius: 2px;
                 transform: translateX(-50%);
+                box-shadow: 0 1px 3px rgba(26,26,26,.1);
                 padding: 10px 10px;
                 text-align: center;
+                background-color: white;
+                color:black;
             }
             .answer{
                 cursor: pointer;
@@ -378,11 +400,14 @@ body{
                 left: 50%;
                 width: 50%;
                 box-sizing: border-box;
-                border: 2px solid @bordercolor;
-                border-radius: 10px;
+                border: 2px solid white;
+                border-radius: 2px;
                 transform: translateX(-50%);
                 padding: 10px 10px;
                 text-align: center;
+                background-color: white;
+                color:black;
+                box-shadow: 0 1px 3px rgba(26,26,26,.1);
             }
             .hide{
                 cursor: pointer;
@@ -400,7 +425,7 @@ body{
                 box-sizing: border-box;
                 background-color: rgb(31, 31, 31);
                 box-shadow: 1px 1px 50px rgb(31, 31, 31);
-                border-radius: 10px;
+                border-radius: 2px;
                 transform: translateX(-50%);
                 padding: 10px 10px;
                 text-align: center;
@@ -414,6 +439,7 @@ body{
         }
     }
 }
+
 @font-face {
   font-family: 'iconfont';
   src: url('iconfont.eot');
